@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="home">
+	<h1 class="page-heading">Projects</h1>
+	<p>{{ strapi.collections.projects.size }}</p>
+	<p>{{ strapi.collections.categories.size }}</p>
+	{%- if strapi.collections.projects.size > 0 -%}
+	<ul>
+		{%- for project in strapi.collections.projects -%}
+		<li>{{ project.name }}</li>
+		{%- endfor -%}
+	</ul>
+	{%- endif -%}
+</div>

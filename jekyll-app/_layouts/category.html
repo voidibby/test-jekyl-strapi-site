@@ -1,0 +1,6 @@
+<h1>{{ page.document.name }}</h1>
+<ul>
+	{%- for restaurant in page.document.restaurants -%}
+	<li>{{ restaurant.name }}</li>
+	{%- endfor -%}
+</ul>
